@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <script>
+        var myObj;
+        var contador_itens = 0
+        var linha_em_edicao = false
+    </script>
+    <script type="text/javascript" src='{% static "floadCpfCnpj.js" %}'></script>
+    <script type="text/javascript" src='{% static "fCarregaJSON.js" %}'></script>
+    <script type="text/javascript" src='{% static "floadCepUf.js" %}'></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+    <script type="text/javascript" src='{% static "dist/jquery.inputmask.bundle.min.js" %}'></script>
+    <script type="text/javascript" src='{% static "funcoes_gridpedidos.js" %}'></script>
+
+    <!-- bootstrap - link cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+<style type="text/css">
+  table,td {
+             border: 1px solid red;
+           }
+</style>
+
+
+<body onload="fCarregaJSON()">
+    <h1> Pedido de Venda </h1>
+    <form action='{% url "pedidos" %}' method = "post" >
+        {% csrf_token %}
+        {{ form }}
+        <br> <br> <br> <br>
+        <div  id='gradeitenspedido'>
+            <button id="btnAdicionar" >Novo item</button> <br> <br>
+            <table id="tblItemPedido" class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Ação</th>
+                        <th>Item</th>
+                        <th>Produto</th>
+                        <th>Descrição</th>
+                        <th>Qtde</th>
+                        <th>Unidade</th>
+                        <th>Preço/Unid</th>
+                        <th>Valor Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{ formset1.management_form }}
+                     <!-- o management_form deve estar declarado próximo do local onde irá ser utilizado o formset
+                      Se não for posto em local correto dá a mensagem informando que o formset foi adulterado -->
+                    {% for ipedido in formset1 %}
+                    <tr >
+                        {% for field in ipedido %}
+                            <td>
+                                {{ field }}
+                            </td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <br> <br>
+            <p><span style ="font-weight: bold; font-style: italic;"> </span> {{ form2 }} </p>
+             <!--   <p><span style ="font-weight: bold; font-style: italic;">Valor total do pedido: </span><input type=text id='total_pedido' readonly/></p>
+             tirou o  readonly da tag acima   ----   objItem = $(this).find('#produto'); ---  .each(function -->
+       </div>
+       <br> <br> <br> <br>
+       <input type="submit" value="Fechar Pedido" > <br>
+    </form>
+
+    <script>
+        jQuery(function($){
+            $("#cep").inputmask("99999-999")
+            });
+        $("#tblItemPedido tbody tr td > input").each(function() {
+            objItem = $(this);
+            if (typeof($(this).attr("value")) == "undefined") {
+               if ($(this).attr("id") == "descricao") {
+                  console.log("Entrou em Valor Indefinido Produto... ")
+	              var par = $(this).parent().parent(); //tr
+	              par.remove();
+                  }
+                }
+            else {
+                  console.log("Length ..." + objItem.length );
+                  console.log("Value ..." + objItem.val() );
+                 }
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Yowft Brasil</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+}
+
+.telalogin {
+  background: #ccc;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 50px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    visibility: hidden;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 9px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+</head>
+<body id="corpo" opcao="{{ acesso }}">
+
+<h2>CSS Layout Float com Django</h2>
+<p>Este é um exemplo de página WEB com design responsivo.</p>
+
+<header>
+  <h2>Testes Django</h2>
+</header>
+
+<section>
+    <nav>
+      <ul>
+        <li style="visibility: visible"><a href="#formlogin" onclick="fAbreForm()">Login</a></li>
+        <li style="visibility: hide" id="pedidos"><a href="{% url 'pedidos' %}" >Pedidos</a></li>
+        <li style="visibility: hide" id="amigos"><a href="{% url 'amigos' %}" target="iframe_a">Amigos</a></li>
+      </ul>
+    </nav>
+    <article>
+      <iframe height="250px" width="100%" name="iframe_a" style="border-style:double" src="{% url 'imginicial' %}" ></iframe>
+    </article>
+</section>
+
+<footer>
+  <p style="font-weight: bold">Yowft Brasil Informática Ltda</p>
+  <p style="font-weight: normal">R. Jorge Tibiriçá 199</p>
+  <p style="font-weight: normal">(xx11) 5573-6602</p>
+</footer>
+
+<div class="telalogin" id="formlogin">
+    <h2>Favor preencher os dados </h2>
+    <form action='{% url "dadoslogin" %}' method = "post"  >
+    {% csrf_token %}
+    Nome <br>
+    <input type="text" name="nome" id = "nome_usuario" required onchange="fTiraBranco(document.getElementById('nome_usuario'))">
+    <br><br>
+    Sobrenome <br>
+    <input type="text" name="sobrenome" id = "sobrenome_usuario" required onchange="fTiraBranco(document.getElementById('sobrenome_usuario'))">
+    <br><br>
+    Endereço (rua, nº, complemento) <br>
+    <input type="text" name="endereco" id = "endereco" required onchange="fTiraBranco(document.getElementById('endereco'))">
+    <br><br>
+    <input type="submit" onclick="fTiraBranco()"> <br>
+    <br><br>
+    <p style="color:blue;" id="mensagem"></p>
+    </form>
+</div>
+
+
+<script>
+  var tmp = document.getElementById("corpo").getAttribute("opcao");
+  tmp = tmp.replace("[","");
+  tmp = tmp.replace("]", "");
+  var listaopcoes = tmp.split(",");
+  var i;
+  for (i=0; i< listaopcoes.length; i++) {
+       listaopcoes[i] = listaopcoes[i].trim();
+                                        }
+  x = "'pedidos'"
+  if(listaopcoes.indexOf(x) > -1) {
+    document.getElementById("pedidos").style.visibility = "visible";
+                                 }
+  x = "'amigo'"
+  if(listaopcoes.indexOf(x) > -1) {
+    document.getElementById("amigos").style.visibility = "visible";
+                                 }
+
+  function fAbreForm() {
+      document.getElementById("formlogin").style.display = "block";
+                       }
+
+  function fTiraBranco(elemento)   {
+      console.log("Texto = " + elemento.value);
+      elemento.value = elemento.value.trim()
+      console.log("Texto alterado = " + elemento.value);
+                                         }
+
+</script>
+</body>
+</html>
