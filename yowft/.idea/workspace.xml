@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97c3c89b-f493-438f-9ba7-58baffac07c2" name="Default Changelist" comment="" />
+    <list default="true" id="97c3c89b-f493-438f-9ba7-58baffac07c2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/tstpedido/templates/tstpedido/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tstpedido/templates/tstpedido/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +63,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tstpedido/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -69,6 +71,15 @@
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="607">
+              <caret line="108" column="49" selection-start-line="108" selection-start-column="49" selection-end-line="108" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -96,6 +107,9 @@
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -107,7 +121,6 @@
         <option value="$PROJECT_DIR$/tstpedido/templates/tstpedido/Formulario.html" />
         <option value="$PROJECT_DIR$/tstpedido/static/floadEndFat.js" />
         <option value="$PROJECT_DIR$/tstpedido/templates/tstpedido/T9e10Imageminicial1.html" />
-        <option value="$PROJECT_DIR$/tstpedido/templates/tstpedido/index.html" />
         <option value="$PROJECT_DIR$/tstpedido/models.py" />
         <option value="$PROJECT_DIR$/tstpedido/urls.py" />
         <option value="$PROJECT_DIR$/tstpedido/static/fCarregaJSON.js" />
@@ -120,15 +133,17 @@
         <option value="$PROJECT_DIR$/tstpedido/static/floadCpfCnpj.js" />
         <option value="$PROJECT_DIR$/tstpedido/static/funcoes_gridpedidos.js" />
         <option value="$PROJECT_DIR$/tstpedido/views.py" />
+        <option value="$PROJECT_DIR$/tstpedido/templates/tstpedido/index.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="17" />
-    <option name="width" value="1347" />
-    <option name="height" value="689" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="16" />
+    <option name="width" value="1348" />
+    <option name="height" value="690" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -206,7 +221,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20026438" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -218,7 +234,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
@@ -249,42 +265,22 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/Formulario - func OK.html" />
     <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/index - func OK.html" />
-    <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/index - Copia - com 1 elemento na lista.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1358" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tstpedido/urls - Copia.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/index - Copia - com 1 elemento na lista.html" />
+    <entry file="file://$PROJECT_DIR$/tstpedido/urls - Copia.py" />
     <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/Formulario.html" />
     <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/Tabela_familia.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/index - Copia1.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/Formulario - tentativa2 - funcionou OK.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/Formulario - teste inicial - func OK.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/index - Copia1.html" />
+    <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/Formulario - tentativa2 - funcionou OK.html" />
+    <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/Formulario - teste inicial - func OK.html" />
     <entry file="file://$PROJECT_DIR$/tstpedido/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tstpedido/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/index - teste inicial -  func OK.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1275" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/index - teste inicial -  func OK.html" />
     <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/Amigos.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -300,20 +296,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/index-simples.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" selection-start-column="4" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/Formulario última versão - está OK.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/index-simples.html" />
+    <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/Formulario última versão - está OK.html" />
     <entry file="file://C:/Eunice/Django-testes/Jquery - tabela editável/Pedido-tabela editavel/funcoes_gridpedidos.js" />
     <entry file="file://$PROJECT_DIR$/tstpedido/apps.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -342,35 +326,13 @@
     <entry file="file://C:/Eunice/Django-testes/BKP2012181455/yowft - funcionou a geração do JSON e grade de itens do pedido/tstpedido/templates/tstpedido/Pedidos.html" />
     <entry file="file://C:/Eunice/Django-testes/BKP2012181455/yowft - funcionou a geração do JSON e grade de itens do pedido/tstpedido/views.py" />
     <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/Pedidos para testes.html" />
-    <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/Pedidos - teste1 - trazer dados do BD.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-137">
-          <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/Pedidos - teste1 - trazer dados do BD.html" />
     <entry file="file://$PROJECT_DIR$/../yowft-funcionou JSON/tstpedido/views.py" />
     <entry file="file://$PROJECT_DIR$/../yowft-funcionou JSON/tstpedido/forms.py" />
-    <entry file="file://$PROJECT_DIR$/tstpedido/views - pedido teste1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tstpedido/views - pedido teste1.py" />
     <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/Pedidos em teste.html" />
-    <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/Pedidos - funcionou validacao FORM1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/Pedidos - em teste.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" selection-start-line="33" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/Pedidos - funcionou validacao FORM1.html" />
+    <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/Pedidos - em teste.html" />
     <entry file="file://$PROJECT_DIR$/tstpedido/static/floadCpfCnpj - Com todos os campos - funcionou.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -396,13 +358,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1921">
-          <caret line="113" column="32" selection-start-line="113" selection-start-column="32" selection-end-line="113" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yowft/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -411,16 +366,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tstpedido/resources.py" />
-    <entry file="file://$PROJECT_DIR$/tstpedido/views - Copia.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tstpedido/views - Copia.py" />
     <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/Pedidos.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1292">
@@ -486,6 +432,13 @@
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="108" column="49" selection-start-line="108" selection-start-column="49" selection-end-line="108" selection-end-column="49" />
         </state>
       </provider>
     </entry>
