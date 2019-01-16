@@ -1,0 +1,6 @@
+Cliente;Endereço;CEP;UF
+00111222000181;Rua Portugal, 300;02126000;RJ
+Produto;Descrição;Unidade;Preço;Qtde;Valor Total
+Broco-001;Ninja;mç;6.15;30;184.5
+Valor Total do Pedido
+184.5

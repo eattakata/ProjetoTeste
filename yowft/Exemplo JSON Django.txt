@@ -1,0 +1,214 @@
+[
+  {
+     "model": "tstpedido.cliente", 
+     "pk": "01122233388", 
+     "fields": {
+                 "tp_pessoa": "PF", 
+                 "nome_cliente": "Maria da Silva", 
+                 "apelido": "MariaS"
+               }
+  }, 
+  {
+     "model": "tstpedido.cliente", 
+     "pk": "00111222000181", 
+     "fields": {
+                 "tp_pessoa": "PJ", 
+                 "nome_cliente": "Empresa1 de teste Ltda", 
+                 "apelido": "Empresa1"
+               }
+  }, 
+  {
+     "model": "tstpedido.cliente", 
+     "pk": "00222333000165", 
+     "fields": {
+                 "tp_pessoa": "PJ", 
+                 "nome_cliente": "Empresa2 de Teste S/A", 
+                 "apelido": "Empresa2"
+               }
+  }, 
+  { 
+     "model": "tstpedido.contato", 
+     "pk": 1, 
+     "fields": {
+                 "cliente": "01122233388", 
+                 "nome_contato": "Mario da Silva", 
+                 "email": "nicetakata@gmail.com", 
+                 "contato_preferencial": "S", 
+                 "telefone_contato": "11988815656"
+               }
+  }, 
+  {
+     "model": "tstpedido.contato", 
+     "pk": 2, 
+     "fields": {
+                 "cliente": "01122233388", 
+                 "nome_contato": "Jose dos Santos", 
+                 "email": "nicetakata@gmail.com", 
+                 "contato_preferencial": "N", 
+                 "telefone_contato": "11977712356"
+               }
+  }, 
+  {
+     "model": "tstpedido.contato", 
+     "pk": 3, 
+     "fields": {
+                 "cliente": "01122233388", 
+                 "nome_contato": "Heitor dos Santos", 
+                 "email": "nicetakata@gmail.com", 
+                 "contato_preferencial": "N", 
+                 "telefone_contato": "11966618989"
+               }
+  }, 
+  {
+     "model": "tstpedido.contato", 
+     "pk": 4, 
+     "fields": {
+                 "cliente": "00111222000181", 
+                 "nome_contato": "Clovis da Silva Santos", 
+                 "email": "nicetakat@gmail.com", 
+                 "contato_preferencial": "N", 
+                 "telefone_contato": "11955515656"
+               }
+  }, 
+  {
+     "model": "tstpedido.contato", 
+     "pk": 5, 
+     "fields": {
+                 "cliente": "00111222000181", 
+                 "nome_contato": "Doroteia da Silva Pereira", 
+                 "email": "nicetakata@gmail.com", 
+                 "contato_preferencial": "S", 
+                 "telefone_contato": "11944418978"
+               }
+  }, 
+  {
+     "model": "tstpedido.contato", 
+     "pk": 6, 
+     "fields": {
+                 "cliente": "00222333000165", 
+                 "nome_contato": "Marian Gimenez", 
+                 "email": "nicetakata@gmail.com", 
+                 "contato_preferencial": "S", 
+                 "telefone_contato": "11985612356"
+               }
+  }, 
+  { 
+     "model": "tstpedido.contato", 
+     "pk": 7, 
+     "fields": {
+                 "cliente": "00222333000165", 
+                 "nome_contato": "Flavia Marcondes", 
+                 "email": "nicetakata@gmail.com", 
+                 "contato_preferencial": "N", 
+                 "telefone_contato": "11987145622"
+               }
+  }, 
+  {
+      "model": "tstpedido.endereco", 
+      "pk": 1, 
+      "fields": {
+                  "cliente": "01122233388", 
+                  "tp_endereco": "F", 
+                  "fl_preferencial": "S", 
+                  "logradouro": "Rua das Amoras, 200", 
+                  "cep": "01456333", 
+                  "uf": "SP"
+                }
+   }, 
+   {
+       "model": "tstpedido.endereco", 
+       "pk": 2, 
+       "fields": {
+                   "cliente": "01122233388", 
+                   "tp_endereco": "C", 
+                   "fl_preferencial": "S", 
+                   "logradouro": "Rua das Pedreiras, 300", 
+                   "cep": "04562000", 
+                   "uf": "SP"
+                 }
+   }, 
+   {
+       "model": "tstpedido.endereco", 
+       "pk": 3, 
+       "fields": {
+                   "cliente": "01122233388", 
+                   "tp_endereco": "F", 
+                   "fl_preferencial": "N", 
+                   "logradouro": "Rua Teixeira da Silva, 500", 
+                   "cep": "01245000", 
+                   "uf": "SP"
+                 }
+   }, 
+   {
+       "model": "tstpedido.endereco", 
+       "pk": 4, 
+       "fields": {
+                   "cliente": "01122233388", 
+                   "tp_endereco": "C", 
+                   "fl_preferencial": "N", 
+                   "logradouro": "Rua das Marias, 300", 
+                   "cep": "01423000", 
+                   "uf": "SP"
+                 }
+   }, 
+   {
+      "model": "tstpedido.endereco", 
+      "pk": 5, 
+      "fields": {
+                  "cliente": "00111222000181", 
+                  "tp_endereco": "F", 
+                  "fl_preferencial": "S", 
+                  "logradouro": "Rua Portugal, 300", 
+                  "cep": "02126000", 
+                  "uf": "RJ"
+                }
+   }, 
+   {
+       "model": "tstpedido.endereco", 
+       "pk": 6, 
+       "fields": {
+                   "cliente": "00111222000181", 
+                   "tp_endereco": "C", 
+                   "fl_preferencial": "S", 
+                   "logradouro": "Rua Chile, 300", 
+                   "cep": "02323000", 
+                   "uf": "RJ"
+                 }
+   }, 
+   { 
+       "model": "tstpedido.endereco", 
+       "pk": 7, 
+       "fields": {
+                    "cliente": "00111222000181", 
+                    "tp_endereco": "F", 
+                    "fl_preferencial": "N", 
+                    "logradouro": "Rua China, 400", 
+                    "cep": "02356000", 
+                    "uf": "RJ"
+                 }
+   }, 
+   {
+       "model": "tstpedido.endereco", 
+       "pk": 8, 
+       "fields": {
+                   "cliente": "00222333000165", 
+                   "tp_endereco": "F", 
+                   "fl_preferencial": "S", 
+                   "logradouro": "Rua Capixaba, 100", 
+                   "cep": "01234000", 
+                   "uf": "SP"
+                 }
+   }, 
+   {
+        "model": "tstpedido.endereco", 
+        "pk": 9, 
+        "fields": {
+                    "cliente": "00222333000165", 
+                    "tp_endereco": "C", 
+                    "fl_preferencial": "S", 
+                    "logradouro": "Rua das Luzes, 400", 
+                    "cep": "07894000", 
+                    "uf": "SP"
+                  }
+    }
+]

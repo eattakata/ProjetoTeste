@@ -1,0 +1,44 @@
+'
+<?xml version="1.0" encoding="utf-8"?>\n
+<django-objects version="1.0">
+    <object model="tstpedido.cliente" pk="01122233388">
+      <field name="tp_pessoa" type="CharField">PF</field>
+      <field name="nome_cliente" type="CharField">Maria da Silva</field>
+      <field name="apelido" type="CharField">MariaS</field>
+    </object>
+    <object model="tstpedido.cliente" pk="00111222000181"><field name="tp_pessoa" type="CharField">PJ</field><field name="nome_cliente" type="CharField">Empresa1 de teste Ltda</field><field name="apelido" type="CharField">Empresa1</field></object>
+    <object model="tstpedido.cliente" pk="00222333000165"><field name="tp_pessoa" type="CharField">PJ</field><field name="nome_cliente" type="CharField">Empresa2 de Teste S/A</field><field name="apelido" type="CharField">Empresa2</field></object>
+
+    <object model="tstpedido.contato" pk="1">
+        <field name="cliente" rel="ManyToOneRel" to="tstpedido.cliente">01122233388</field>
+        <field name="nome_contato" type="CharField">Mario da Silva</field>
+        <field name="email" type="CharField">nicetakata@gmail.com</field>
+        <field name="contato_preferencial" type="CharField">S</field>
+        <field name="telefone_contato" type="CharField">11988815656</field>
+    </object>
+    <object model="tstpedido.contato" pk="2"><field name="cliente" rel="ManyToOneRel" to="tstpedido.cliente">01122233388</field><field name="nome_contato" type="CharField">Jose dos Santos</field><field name="email" type="CharField">nicetakata@gmail.com</field><field name="contato_preferencial" type="CharField">N</field><field name="telefone_contato" type="CharField">11977712356</field></object>
+    <object model="tstpedido.contato" pk="3"><field name="cliente" rel="ManyToOneRel" to="tstpedido.cliente">01122233388</field><field name="nome_contato" type="CharField">Heitor dos Santos</field><field name="email" type="CharField">nicetakata@gmail.com</field><field name="contato_preferencial" type="CharField">N</field><field name="telefone_contato" type="CharField">11966618989</field></object>
+    <object model="tstpedido.contato" pk="4"><field name="cliente" rel="ManyToOneRel" to="tstpedido.cliente">00111222000181</field><field name="nome_contato" type="CharField">Clovis da Silva Santos</field><field name="email" type="CharField">nicetakat@gmail.com</field><field name="contato_preferencial" type="CharField">N</field><field name="telefone_contato" type="CharField">11955515656</field></object>
+    <object model="tstpedido.contato" pk="5"><field name="cliente" rel="ManyToOneRel" to="tstpedido.cliente">00111222000181</field><field name="nome_contato" type="CharField">Doroteia da Silva Pereira</field><field name="email" type="CharField">nicetakata@gmail.com</field><field name="contato_preferencial" type="CharField">S</field><field name="telefone_contato" type="CharField">11944418978</field></object>
+    <object model="tstpedido.contato" pk="6"><field name="cliente" rel="ManyToOneRel" to="tstpedido.cliente">00222333000165</field><field name="nome_contato" type="CharField">Marian Gimenez</field><field name="email" type="CharField">nicetakata@gmail.com</field><field name="contato_preferencial" type="CharField">S</field><field name="telefone_contato" type="CharField">11985612356</field></object>
+    <object model="tstpedido.contato" pk="7"><field name="cliente" rel="ManyToOneRel" to="tstpedido.cliente">00222333000165</field><field name="nome_contato" type="CharField">Flavia Marcondes</field><field name="email" type="CharField">nicetakata@gmail.com</field><field name="contato_preferencial" type="CharField">N</field><field name="telefone_contato" type="CharField">11987145622</field></object>
+
+
+    <object model="tstpedido.endereco" pk="1">
+        <field name="cliente" rel="ManyToOneRel" to="tstpedido.cliente">01122233388</field>
+        <field name="tp_endereco" type="CharField">F</field>
+        <field name="fl_preferencial" type="CharField">S</field>
+        <field name="logradouro" type="CharField">Rua das Amoras, 200</field>
+        <field name="cep" type="CharField">01456333</field>
+        <field name="uf" type="CharField">SP</field>
+    </object>
+    <object model="tstpedido.endereco" pk="2"><field name="cliente" rel="ManyToOneRel" to="tstpedido.cliente">01122233388</field><field name="tp_endereco" type="CharField">C</field><field name="fl_preferencial" type="CharField">S</field><field name="logradouro" type="CharField">Rua das Pedreiras, 300</field><field name="cep" type="CharField">04562000</field><field name="uf" type="CharField">SP</field></object>
+    <object model="tstpedido.endereco" pk="3"><field name="cliente" rel="ManyToOneRel" to="tstpedido.cliente">01122233388</field><field name="tp_endereco" type="CharField">F</field><field name="fl_preferencial" type="CharField">N</field><field name="logradouro" type="CharField">Rua Teixeira da Silva, 500</field><field name="cep" type="CharField">01245000</field><field name="uf" type="CharField">SP</field></object>
+    <object model="tstpedido.endereco" pk="4"><field name="cliente" rel="ManyToOneRel" to="tstpedido.cliente">01122233388</field><field name="tp_endereco" type="CharField">C</field><field name="fl_preferencial" type="CharField">N</field><field name="logradouro" type="CharField">Rua das Marias, 300</field><field name="cep" type="CharField">01423000</field><field name="uf" type="CharField">SP</field></object>
+    <object model="tstpedido.endereco" pk="5"><field name="cliente" rel="ManyToOneRel" to="tstpedido.cliente">00111222000181</field><field name="tp_endereco" type="CharField">F</field><field name="fl_preferencial" type="CharField">S</field><field name="logradouro" type="CharField">Rua Portugal, 300</field><field name="cep" type="CharField">02126000</field><field name="uf" type="CharField">RJ</field></object>
+    <object model="tstpedido.endereco" pk="6"><field name="cliente" rel="ManyToOneRel" to="tstpedido.cliente">00111222000181</field><field name="tp_endereco" type="CharField">C</field><field name="fl_preferencial" type="CharField">S</field><field name="logradouro" type="CharField">Rua Chile, 300</field><field name="cep" type="CharField">02323000</field><field name="uf" type="CharField">RJ</field></object>
+    <object model="tstpedido.endereco" pk="7"><field name="cliente" rel="ManyToOneRel" to="tstpedido.cliente">00111222000181</field><field name="tp_endereco" type="CharField">F</field><field name="fl_preferencial" type="CharField">N</field><field name="logradouro" type="CharField">Rua China, 400</field><field name="cep" type="CharField">02356000</field><field name="uf" type="CharField">RJ</field></object>
+    <object model="tstpedido.endereco" pk="8"><field name="cliente" rel="ManyToOneRel" to="tstpedido.cliente">00222333000165</field><field name="tp_endereco" type="CharField">F</field><field name="fl_preferencial" type="CharField">S</field><field name="logradouro" type="CharField">Rua Capixaba, 100</field><field name="cep" type="CharField">01234000</field><field name="uf" type="CharField">SP</field></object>
+    <object model="tstpedido.endereco" pk="9"><field name="cliente" rel="ManyToOneRel" to="tstpedido.cliente">00222333000165</field><field name="tp_endereco" type="CharField">C</field><field name="fl_preferencial" type="CharField">S</field><field name="logradouro" type="CharField">Rua das Luzes, 400</field><field name="cep" type="CharField">07894000</field><field name="uf" type="CharField">SP</field></object>
+</django-objects>
+'
