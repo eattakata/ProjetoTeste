@@ -7,9 +7,9 @@ from .forms import DadosCliente, ItensPedidoF, TotalPedido
 from django.forms.formsets import formset_factory
 from datetime import timedelta
 from django.core.mail import EmailMessage
-import io
-from reportlab.pdfgen import canvas
-from reportlab.lib.pagesizes import A4, letter
+# import io
+# from reportlab.pdfgen import canvas
+# from reportlab.lib.pagesizes import A4, letter
 from shutil import make_archive
 
 from django.http import HttpResponse
@@ -69,13 +69,13 @@ def pedidos(request):
             # send_mail('PEDIDO APROVADO', 'Seu pedido foi aprovado. O número dele é: ' + str(num_pedido), 'empresakenmei@outlook.com',
             #           ['empresakenmei@outlook.com'], fail_silently=False)
             arquivo_csv = fgeraCSV(form, item_formset, total_pedido, num_pedido)
-            arquivo_pdf = fgeraPDF()
+            # arquivo_pdf = fgeraPDF()
             fgeraarchive()
             email = EmailMessage(
                 'TESTE COM PEDIDOS', 'O número do pedido é: ' + str(num_pedido),
                 'empresakenmei@outlook.com', ['empresakenmei@outlook.com'])
             # email.attach_file(fgeraCSV(form, item_formset, total_pedido, num_pedido), fgeraPDF()) ==> só funcionou com 1 arquivo atachado
-            email.attach_file(arquivo_pdf)
+            email.attach_file(arquivo_csv)
             email.send()
             return HttpResponse(
                 "Seu pedido foi gravado com sucesso. A confirmação do seu pedido foi enviado para o email 'empresakenmei@hotmail.com'")
@@ -177,21 +177,21 @@ def fgeraCSV(form, item_formset, total_pedido, num_pedido):
 def fgeraPDF():
     # Create the PDF object, using the buffer as its "file."
     nome_arquivo = "tstpedido\\static\hello2.pdf"
-    p = canvas.Canvas(nome_arquivo, pagesize=A4)
+    # p = canvas.Canvas(nome_arquivo, pagesize=A4)
 
-    p.setLineWidth(.3)
-    p.setFont('Helvetica', 12)
+    # p.setLineWidth(.3)
+    # p.setFont('Helvetica', 12)
 
-    p.drawString(30, 750, 'PEDIDO DE COMPRA')
-    p.drawString(30, 735, 'EMPRESAS TESTE')
-    p.drawString(500, 750, "04/01/2019")
-    p.line(480, 747, 580, 747)
+    # p.drawString(30, 750, 'PEDIDO DE COMPRA')
+    # p.drawString(30, 735, 'EMPRESAS TESTE')
+    # p.drawString(500, 750, "04/01/2019")
+    # p.line(480, 747, 580, 747)
 
-    p.drawString(275, 725, 'VALOR TOTAL:')
-    p.drawString(500, 725, "R$ 10.000,00")
-    p.line(378, 723, 580, 723)
+    # p.drawString(275, 725, 'VALOR TOTAL:')
+    # p.drawString(500, 725, "R$ 10.000,00")
+    # p.line(378, 723, 580, 723)
 
-    p.save()
+    # p.save()
 
     return nome_arquivo
 

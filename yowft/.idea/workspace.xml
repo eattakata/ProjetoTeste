@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c3c89b-f493-438f-9ba7-58baffac07c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tstpedido/archives/.zip" beforeDir="false" afterPath="$PROJECT_DIR$/tstpedido/archives/.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tstpedido/static/dist/jquery.inputmask.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/tstpedido/static/dist/jquery.inputmask.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tstpedido/static/dist/jquery.inputmask.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/tstpedido/static/dist/jquery.inputmask.bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tstpedido/static/dist/min/jquery.inputmask.date.extensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/tstpedido/static/dist/min/jquery.inputmask.date.extensions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tstpedido/static/dist/min/jquery.inputmask.extensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/tstpedido/static/dist/min/jquery.inputmask.extensions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tstpedido/static/dist/min/jquery.inputmask.js" beforeDir="false" afterPath="$PROJECT_DIR$/tstpedido/static/dist/min/jquery.inputmask.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tstpedido/static/dist/min/jquery.inputmask.numeric.extensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/tstpedido/static/dist/min/jquery.inputmask.numeric.extensions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tstpedido/static/dist/min/jquery.inputmask.phone.extensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/tstpedido/static/dist/min/jquery.inputmask.phone.extensions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tstpedido/static/dist/min/jquery.inputmask.regex.extensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/tstpedido/static/dist/min/jquery.inputmask.regex.extensions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tstpedido/static/funcoes_gridpedidos.js" beforeDir="false" afterPath="$PROJECT_DIR$/tstpedido/static/funcoes_gridpedidos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tstpedido/templates/tstpedido/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tstpedido/templates/tstpedido/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tstpedido/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tstpedido/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +15,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yowft/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1802">
-              <caret line="106" selection-start-line="106" selection-end-line="108" selection-end-column="31" />
+            <state relative-caret-position="1411">
+              <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
             </state>
           </provider>
         </entry>
@@ -45,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tstpedido/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1037">
-              <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+            <state relative-caret-position="221">
+              <caret line="77" column="41" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -57,11 +45,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="97">
               <caret line="96" column="46" lean-forward="true" selection-start-line="96" selection-start-column="46" selection-end-line="96" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#22#31#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,8 +92,8 @@
         <option value="$PROJECT_DIR$/tstpedido/static/floadCepUf.js" />
         <option value="$PROJECT_DIR$/tstpedido/static/floadCpfCnpj.js" />
         <option value="$PROJECT_DIR$/tstpedido/static/funcoes_gridpedidos.js" />
-        <option value="$PROJECT_DIR$/tstpedido/views.py" />
         <option value="$PROJECT_DIR$/tstpedido/templates/tstpedido/index.html" />
+        <option value="$PROJECT_DIR$/tstpedido/views.py" />
       </list>
     </option>
   </component>
@@ -230,7 +229,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/Formulario - func OK.html" />
     <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/index - func OK.html" />
     <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/index - Copia - com 1 elemento na lista.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -441,13 +439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yowft/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1802">
-          <caret line="106" selection-start-line="106" selection-end-line="108" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tstpedido/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2176">
@@ -458,20 +449,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tstpedido/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1037">
-          <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tstpedido/templates/tstpedido/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
           <caret line="96" column="46" lean-forward="true" selection-start-line="96" selection-start-column="46" selection-end-line="96" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yowft/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tstpedido/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="77" column="41" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
