@@ -130,25 +130,27 @@ footer {
 
 
 <script>
-  var tmp = document.getElementById("corpo").getAttribute("opcao");
-  tmp = tmp.replace("[","");
-  tmp = tmp.replace("]", "");
-  var listaopcoes = tmp.split(",");
-  var i;
-  for (i=0; i< listaopcoes.length; i++) {
-       listaopcoes[i] = listaopcoes[i].trim();
-       console.log("Lista ... " + listaopcoes[i]);
-                                        }
-  x = "'pedidos'"
-  if(listaopcoes.indexOf(x) > -1) {
-    console.log("Veio a opção PEDIDOS")
-    document.getElementById("pedidos").style.visibility = "visible";
-                                 }
-  x = "'amigo'"
-  if(listaopcoes.indexOf(x) > -1) {
-    console.log("Veio a opção AMIGO")
-    document.getElementById("amigos").style.visibility = "visible";
-                                 }
+  document.getElementById("pedidos").style.visibility = "visible";
+  document.getElementById("amigos").style.visibility = "visible";
+  // var tmp = document.getElementById("corpo").getAttribute("opcao");
+  // tmp = tmp.replace("[","");
+  // tmp = tmp.replace("]", "");
+  // var listaopcoes = tmp.split(",");
+  // var i;
+  // for (i=0; i< listaopcoes.length; i++) {
+  //      listaopcoes[i] = listaopcoes[i].trim();
+  //      console.log("Lista ... " + listaopcoes[i]);
+  //                                       }
+  // x = "'pedidos'"
+  // if(listaopcoes.indexOf(x) > -1) {
+  //   console.log("Veio a opção PEDIDOS")
+  //   document.getElementById("pedidos").style.visibility = "visible";
+  //                                }
+  // x = "'amigo'"
+  // if(listaopcoes.indexOf(x) > -1) {
+  //   console.log("Veio a opção AMIGO")
+  //   document.getElementById("amigos").style.visibility = "visible";
+  //                                }
 
   function fAbreForm() {
       document.getElementById("formlogin").style.display = "block";
