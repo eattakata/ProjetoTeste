@@ -48,7 +48,7 @@ def dadoslogin(request):
     # endif
 
     # FORMA 3 para habilitar Familia e/ou Amigos na tela principal de acordo com a lista #
-    tmp = ['amigo']
+    tmp = ['pedidos', 'amigo']
     context = {'acesso': tmp}
     return render(request, 'tstpedido/index.html', context)
 
