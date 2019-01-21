@@ -93,8 +93,8 @@ footer {
 <section>
     <nav>
       <ul>
-        <li style="visibility: visible"><a href="#formlogin" onclick="fAbreForm()">Login</a></li>
-        <li style="visibility: hide" id="pedidos"><a href="{% url 'pedidos' %}" >Pedidos</a></li>
+        <li style="visibility: hide"><a href="#formlogin" onclick="fAbreForm()">Login</a></li>
+        <li style="visibility: visible" id="pedidos"><a href="{% url 'pedidos' %}" >Pedidos</a></li>
         <li style="visibility: hide" id="amigos"><a href="{% url 'amigos' %}" target="iframe_a">Amigos</a></li>
       </ul>
     </nav>
@@ -130,8 +130,8 @@ footer {
 
 
 <script>
-  document.getElementById("pedidos").style.visibility = "visible";
-  document.getElementById("amigos").style.visibility = "visible";
+  // document.getElementById("pedidos").style.visibility = "visible";
+  // document.getElementById("amigos").style.visibility = "visible";
   // var tmp = document.getElementById("corpo").getAttribute("opcao");
   // tmp = tmp.replace("[","");
   // tmp = tmp.replace("]", "");
